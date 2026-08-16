@@ -12,7 +12,10 @@ import {
   BookOpen, 
   BarChart2, 
   MessageSquare,
-  Bus
+  Bus,
+  Truck,
+  ShoppingBag,
+  Utensils
 } from 'lucide-react';
 
 const realProjects = [
@@ -93,6 +96,45 @@ const realProjects = [
     borderColor: 'border-amber-500/30 hover:border-amber-500/70',
     btnBorder: 'border-amber-500/40 hover:bg-amber-500/20 text-amber-300',
     iconBg: 'bg-amber-950/80 text-amber-400 border-amber-500/40',
+  },
+  {
+    id: 'transport-logistics',
+    title: 'Swift Transport Portal',
+    category: 'Transport & Logistics',
+    tech: 'Next.js, Tailwind',
+    desc: 'Modern transport and logistics platform for travel bookings & vehicle management.',
+    icon: Truck,
+    image: '/travel.png',
+    link: 'https://transport2-tau.vercel.app/',
+    borderColor: 'border-indigo-500/30 hover:border-indigo-500/70',
+    btnBorder: 'border-indigo-500/40 hover:bg-indigo-500/20 text-indigo-300',
+    iconBg: 'bg-indigo-950/80 text-indigo-400 border-indigo-500/40',
+  },
+  {
+    id: 'shakti-saree-store',
+    title: 'Shakti Saree Boutique',
+    category: 'Ethnic E-Commerce',
+    tech: 'Next.js, React',
+    desc: 'Exclusive clothing store for ethnic sarees, bridal collections & modern apparel.',
+    icon: ShoppingBag,
+    image: '/saktisary.png',
+    link: 'https://cloth-shop-cyan-iota.vercel.app',
+    borderColor: 'border-rose-500/30 hover:border-rose-500/70',
+    btnBorder: 'border-rose-500/40 hover:bg-rose-500/20 text-rose-300',
+    iconBg: 'bg-rose-950/80 text-rose-400 border-rose-500/40',
+  },
+  {
+    id: 'restaurant-dining',
+    title: 'Gourmet Restaurant',
+    category: 'Dining & Food Portal',
+    tech: 'Next.js, React',
+    desc: 'Premium restaurant ordering platform with digital menu & online table reservations.',
+    icon: Utensils,
+    image: '/restorent.png',
+    link: 'https://restorent-nu.vercel.app/',
+    borderColor: 'border-orange-500/30 hover:border-orange-500/70',
+    btnBorder: 'border-orange-500/40 hover:bg-orange-500/20 text-orange-300',
+    iconBg: 'bg-orange-950/80 text-orange-400 border-orange-500/40',
   }
 ];
 
