@@ -53,24 +53,24 @@ export default function FoundersSection() {
         {/* 12-Column Responsive Grid with Generous Gap to Prevent Overlap */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
-          {/* Left Column: Ritik Profile Circle (3 Cols on LG) */}
+          {/* Left Column: Sachin Profile Circle (3 Cols on LG) - S FOR SR SERVICES */}
           <div className="lg:col-span-3 flex justify-center order-2 lg:order-1">
             <motion.div
               className="relative cursor-pointer"
               {...circleMotion}
               whileHover={{ scale: 1.05 }}
-              onClick={() => router.push('/founder/ritik')}
+              onClick={() => router.push('/founder/sachin')}
             >
               <div className="relative flex aspect-square h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[270px] lg:w-[270px] items-center justify-center rounded-full border border-white/15 bg-slate-950/80 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/20 via-transparent to-violet-500/15 blur-xl pointer-events-none" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-400/15 blur-xl pointer-events-none" />
                 <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
                 <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
                   <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md">
-                    R
+                    S
                   </div>
                   <div>
-                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Ritik Motwani</p>
-                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CCO</p>
+                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Sachin Rawat</p>
+                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-purple-300">Co-Founder & CTO</p>
                     <p className="mt-1 text-[10px] text-slate-400">Click to view profile</p>
                   </div>
                 </div>
@@ -120,24 +120,24 @@ export default function FoundersSection() {
 
           </div>
 
-          {/* Right Column: Sachin Profile Circle (3 Cols on LG) */}
+          {/* Right Column: Ritik Profile Circle (3 Cols on LG) - R FOR SR SERVICES */}
           <div className="lg:col-span-3 flex justify-center order-3 lg:order-3">
             <motion.div
               className="relative cursor-pointer"
               {...circleMotion}
               whileHover={{ scale: 1.05 }}
-              onClick={() => router.push('/founder/sachin')}
+              onClick={() => router.push('/founder/ritik')}
             >
               <div className="relative flex aspect-square h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[270px] lg:w-[270px] items-center justify-center rounded-full border border-white/15 bg-slate-950/80 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-400/15 blur-xl pointer-events-none" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/20 via-transparent to-violet-500/15 blur-xl pointer-events-none" />
                 <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
                 <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
                   <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md">
-                    S
+                    R
                   </div>
                   <div>
-                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Sachin Rawat</p>
-                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CTO</p>
+                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Ritik Motwani</p>
+                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CCO</p>
                     <p className="mt-1 text-[10px] text-slate-400">Click to view profile</p>
                   </div>
                 </div>

@@ -134,23 +134,6 @@ export default function Footer() {
               Founders
             </h4>
             <div className="space-y-3 pt-1">
-              {/* Ritik Card */}
-              <Link
-                href="/founder/ritik"
-                className="group flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-3 hover:border-cyan-400/50 hover:bg-slate-900 transition-all cursor-pointer shadow-md"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="h-9 w-9 rounded-full bg-cyan-950 border border-cyan-500/30 flex items-center justify-center font-bold text-cyan-400 text-xs font-playfair shrink-0">
-                    R
-                  </div>
-                  <div>
-                    <h5 className="text-xs font-bold text-white font-playfair group-hover:text-cyan-300 transition-colors">Ritik (CCO)</h5>
-                    <p className="text-[10px] text-slate-400">Chief Technology Officer</p>
-                  </div>
-                </div>
-                <ArrowUpRight size={16} className="text-purple-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </Link>
-
               {/* Sachin Card */}
               <Link
                 href="/founder/sachin"
@@ -162,10 +145,27 @@ export default function Footer() {
                   </div>
                   <div>
                     <h5 className="text-xs font-bold text-white font-playfair group-hover:text-purple-300 transition-colors">Sachin (CTO)</h5>
-                    <p className="text-[10px] text-slate-400">Chief Creative Officer</p>
+                    <p className="text-[10px] text-slate-400">Chief Technology Officer</p>
                   </div>
                 </div>
                 <ArrowUpRight size={16} className="text-purple-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
+
+              {/* Ritik Card */}
+              <Link
+                href="/founder/ritik"
+                className="group flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-3 hover:border-cyan-400/50 hover:bg-slate-900 transition-all cursor-pointer shadow-md"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="h-9 w-9 rounded-full bg-cyan-950 border border-cyan-500/30 flex items-center justify-center font-bold text-cyan-400 text-xs font-playfair shrink-0">
+                    R
+                  </div>
+                  <div>
+                    <h5 className="text-xs font-bold text-white font-playfair group-hover:text-cyan-300 transition-colors">Ritik (CCO)</h5>
+                    <p className="text-[10px] text-slate-400">Chief Creative Officer</p>
+                  </div>
+                </div>
+                <ArrowUpRight size={16} className="text-cyan-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
           </div>
