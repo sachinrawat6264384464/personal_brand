@@ -2,8 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { 
   Github, 
   Linkedin, 
@@ -16,7 +14,6 @@ import {
   Trophy, 
   Star, 
   Briefcase, 
-  Users, 
   Rocket, 
   CheckCircle2, 
   Monitor, 
@@ -30,8 +27,6 @@ import {
 export default function FounderRitik() {
   return (
     <div className="min-h-screen bg-[#050816] text-white font-sans overflow-x-hidden">
-      <Navbar />
-
       {/* Main Container */}
       <main className="relative pt-24 sm:pt-32 pb-16 px-3 sm:px-8 lg:px-16 max-w-7xl mx-auto space-y-10 sm:space-y-16">
 
@@ -222,7 +217,7 @@ export default function FounderRitik() {
               <ul className="space-y-2.5 sm:space-y-3.5 text-xs sm:text-sm text-slate-300">
                 <li className="flex items-start gap-2 sm:gap-3">
                   <CheckCircle2 size={14} className="text-cyan-400 shrink-0 mt-0.5 sm:w-4 sm:h-4" />
-                  <span>Led 2+ successful projects across diverse industries</span>
+                  <span>Led multiple successful projects across diverse industries</span>
                 </li>
                 <li className="flex items-start gap-2 sm:gap-3">
                   <CheckCircle2 size={14} className="text-cyan-400 shrink-0 mt-0.5 sm:w-4 sm:h-4" />
@@ -252,12 +247,12 @@ export default function FounderRitik() {
 
         </div>
 
-        {/* Middle Section 2: 4 Stats Counter Banner Grid (2-by-2 on mobile) */}
+        {/* Middle Section 2: 3 Stats Counter Banner Grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-2xl sm:rounded-3xl border border-white/10 bg-slate-950/70 p-3.5 sm:p-8 backdrop-blur-2xl shadow-xl grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 divide-y sm:divide-y-0 sm:divide-x divide-white/10"
+          className="rounded-2xl sm:rounded-3xl border border-white/10 bg-slate-950/70 p-3.5 sm:p-8 backdrop-blur-2xl shadow-xl grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 divide-y sm:divide-y-0 sm:divide-x divide-white/10"
         >
           {/* Stat 1 */}
           <div className="flex items-center gap-2.5 sm:gap-4 pt-2 sm:pt-0 sm:pl-4 first:pl-0">
@@ -265,25 +260,13 @@ export default function FounderRitik() {
               <Briefcase size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">15+</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">Multiple</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-200">Projects Delivered</p>
               <p className="text-[8px] sm:text-[10px] text-slate-400">Across industries</p>
             </div>
           </div>
 
           {/* Stat 2 */}
-          <div className="flex items-center gap-2.5 sm:gap-4 pt-2 sm:pt-0 sm:pl-4">
-            <div className="h-9 w-9 sm:h-12 sm:w-12 rounded-xl sm:rounded-2xl bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0 shadow-md">
-              <Users size={18} className="sm:w-5 sm:h-5" />
-            </div>
-            <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">2+</p>
-              <p className="text-[10px] sm:text-xs font-bold text-slate-200">Years Experience</p>
-              <p className="text-[8px] sm:text-[10px] text-slate-400">Full-stack & AI</p>
-            </div>
-          </div>
-
-          {/* Stat 3 */}
           <div className="flex items-center gap-2.5 sm:gap-4 pt-2 sm:pt-0 sm:pl-4">
             <div className="h-9 w-9 sm:h-12 sm:w-12 rounded-xl sm:rounded-2xl bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0 shadow-md">
               <Rocket size={18} className="sm:w-5 sm:h-5" />
@@ -295,7 +278,7 @@ export default function FounderRitik() {
             </div>
           </div>
 
-          {/* Stat 4 */}
+          {/* Stat 3 */}
           <div className="flex items-center gap-2.5 sm:gap-4 pt-2 sm:pt-0 sm:pl-4">
             <div className="h-9 w-9 sm:h-12 sm:w-12 rounded-xl sm:rounded-2xl bg-pink-950/80 border border-pink-500/30 flex items-center justify-center text-pink-400 shrink-0 shadow-md">
               <Award size={18} className="sm:w-5 sm:h-5" />
@@ -398,8 +381,6 @@ export default function FounderRitik() {
         </motion.div>
 
       </main>
-
-      <Footer />
     </div>
   );
 }

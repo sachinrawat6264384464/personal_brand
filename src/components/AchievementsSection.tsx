@@ -38,7 +38,7 @@ const achievementCards = [
   },
   {
     title: 'Portfolio Success',
-    desc: 'Successfully delivered 15+ projects driving real growth.',
+    desc: 'Successfully delivered multiple projects driving real growth.',
     icon: Rocket,
     gradient: 'from-pink-500 to-rose-600',
     borderColor: 'border-pink-500/30 hover:border-pink-500/60',
@@ -48,7 +48,7 @@ const achievementCards = [
   },
   {
     title: 'Years of Expertise',
-    desc: '2+ years of hands-on experience in high-quality solutions.',
+    desc: 'Extensive hands-on experience in high-quality solutions.',
     icon: Target,
     gradient: 'from-emerald-500 to-teal-600',
     borderColor: 'border-emerald-500/30 hover:border-emerald-500/60',
@@ -80,7 +80,7 @@ const achievementCards = [
 
 const mainStats = [
   {
-    value: '15+',
+    value: 'Multiple',
     title: 'Successful Projects',
     subtitle: 'Completed with excellence',
     icon: Briefcase,
@@ -88,7 +88,7 @@ const mainStats = [
     iconBg: 'bg-blue-950/80 border-blue-500/30'
   },
   {
-    value: '15+',
+    value: 'Multiple',
     title: 'Happy Clients',
     subtitle: 'Lasting relationships',
     icon: Users,
