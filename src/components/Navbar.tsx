@@ -63,7 +63,7 @@ export default function Navbar() {
               <ArrowRight size={14} />
             </a>
 
-            <button className="lg:hidden p-1.5 text-slate-200 hover:text-white" onClick={() => setOpen((s) => !s)} aria-label="menu">
+            <button className="lg:hidden p-1.5 text-slate-200 hover:text-white" onClick={() => setOpen((s) => !s)} aria-label="Toggle navigation menu">
               {open ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>

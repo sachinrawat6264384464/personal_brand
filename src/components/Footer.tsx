@@ -141,7 +141,7 @@ export default function Footer() {
               >
                 <div className="flex items-center gap-3">
                   <div className="h-9 w-9 rounded-full bg-purple-950 border border-purple-500/30 flex items-center justify-center shrink-0 overflow-hidden p-0.5">
-                    <img src="/sachin.png" alt="Sachin Rawat" className="h-full w-full object-cover rounded-full" />
+                    <img src="/sachin.webp" alt="Sachin Rawat" loading="lazy" decoding="async" width={36} height={36} className="h-full w-full object-cover rounded-full" />
                   </div>
                   <div>
                     <h5 className="text-xs font-bold text-white font-playfair group-hover:text-purple-300 transition-colors">Sachin (CTO)</h5>
@@ -158,7 +158,7 @@ export default function Footer() {
               >
                 <div className="flex items-center gap-3">
                   <div className="h-9 w-9 rounded-full bg-cyan-950 border border-cyan-500/30 flex items-center justify-center shrink-0 overflow-hidden p-0.5">
-                    <img src="/ritk.png" alt="Ritik Motwani" className="h-full w-full object-cover rounded-full" />
+                    <img src="/ritk.webp" alt="Ritik Motwani" loading="lazy" decoding="async" width={36} height={36} className="h-full w-full object-cover rounded-full" />
                   </div>
                   <div>
                     <h5 className="text-xs font-bold text-white font-playfair group-hover:text-cyan-300 transition-colors">Ritik (CMO)</h5>
@@ -223,6 +223,7 @@ export default function Footer() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
+              aria-label="Subscribe email address"
               className="w-full sm:w-72 rounded-xl border border-white/10 bg-slate-900 px-4 py-3 text-xs text-white placeholder-slate-500 focus:border-purple-400 focus:outline-none transition-all"
               required
             />

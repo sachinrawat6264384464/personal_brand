@@ -67,8 +67,12 @@ export default function FoundersSection() {
                 
                 {/* Full Circle Image */}
                 <img
-                  src="/sachin.png"
+                  src="/sachin.webp"
                   alt="Sachin Rawat"
+                  loading="lazy"
+                  decoding="async"
+                  width={280}
+                  height={280}
                   className="h-full w-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                 />
 
@@ -146,8 +150,12 @@ export default function FoundersSection() {
                 
                 {/* Full Circle Image */}
                 <img
-                  src="/ritk.png"
+                  src="/ritk.webp"
                   alt="Ritik Motwani"
+                  loading="lazy"
+                  decoding="async"
+                  width={280}
+                  height={280}
                   className="h-full w-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                 />
 

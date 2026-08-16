@@ -118,7 +118,7 @@ export default function FounderRitik() {
 
                 {/* Glowing Avatar */}
                 <div className="flex h-16 w-16 sm:h-24 sm:w-24 items-center justify-center rounded-full border border-cyan-400/40 bg-gradient-to-br from-cyan-900/60 to-slate-950 text-2xl sm:text-4xl font-extrabold text-white shadow-lg font-playfair shrink-0 overflow-hidden p-0.5">
-                  <img src="/ritk.png" alt="Ritik Motwani" className="h-full w-full object-cover rounded-full" />
+                  <img src="/ritk.webp" alt="Ritik Motwani" className="h-full w-full object-cover rounded-full" />
                 </div>
 
                 <div>

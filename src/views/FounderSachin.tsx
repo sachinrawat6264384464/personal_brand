@@ -118,7 +118,7 @@ export default function FounderSachin() {
 
                 {/* Glowing Avatar */}
                 <div className="flex h-16 w-16 sm:h-24 sm:w-24 items-center justify-center rounded-full border border-purple-500/40 bg-gradient-to-br from-purple-900/60 to-slate-950 text-2xl sm:text-4xl font-extrabold text-white shadow-lg font-playfair shrink-0 overflow-hidden p-0.5">
-                  <img src="/sachin.png" alt="Sachin Rawat" className="h-full w-full object-cover rounded-full" />
+                  <img src="/sachin.webp" alt="Sachin Rawat" className="h-full w-full object-cover rounded-full" />
                 </div>
 
                 <div>
