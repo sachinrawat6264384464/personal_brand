@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import HeroSection from '../components/HeroSection';
 import FoundersSection from '../components/FoundersSection';
 import ServicesSection from '../components/ServicesSection';
@@ -11,10 +10,6 @@ import CTASection from '../components/CTASection';
 import ContactSection from '../components/ContactSection';
 
 export default function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div>
       <HeroSection />
@@ -23,8 +18,8 @@ export default function Home() {
       <ProjectsSection />
       <ProcessSection />
       <TechStackSection />
-      <TestimonialsSection />
       <AchievementsSection />
+      <TestimonialsSection />
       <CTASection />
       <ContactSection />
     </div>

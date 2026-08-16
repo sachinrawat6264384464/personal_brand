@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { LogOut, Settings, FileText, Image, Link2, Zap } from 'lucide-react';
-import { firebaseEnabled } from '../firebase';
+import { firebaseEnabled } from '../../firebase';
 
 const sections = [
   { id: 'hero', title: 'Hero Section', icon: Zap, color: 'from-cyan-500 to-blue-600', fields: ['Title', 'Subtitle', 'CTA Button Text', 'CTA Button Link'] },
@@ -14,20 +16,20 @@ const sections = [
 ];
 
 export default function AdminDashboard(){
-  const navigate = useNavigate();
+  const router = useRouter();
   useEffect(() => {
-    const authLocal = localStorage.getItem('adminAuth');
+    const authLocal = typeof window !== 'undefined' ? localStorage.getItem('adminAuth') : null;
     if (!authLocal) {
       // Not authenticated locally — redirect to login
-      navigate('/admin');
+      router.push('/admin');
     }
-  }, [navigate]);
+  }, [router]);
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [formData, setFormData] = useState<Record<string, string>>({});
 
   const handleLogout = () => {
     localStorage.removeItem('adminAuth');
-    navigate('/admin');
+    router.push('/admin');
   };
 
   const handleInputChange = (field: string, value: string) => {

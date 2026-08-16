@@ -1,26 +1,28 @@
+'use client';
+
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth, firebaseEnabled } from '../firebase';
-import { useNavigate } from 'react-router-dom';
+import { auth, firebaseEnabled } from '../../firebase';
+import { useRouter } from 'next/navigation';
 
 export default function AdminLogin(){
   const [email,setEmail]=useState('');
   const [password,setPassword]=useState('');
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const submit = async (e:React.FormEvent)=>{
     e.preventDefault();
     if (!firebaseEnabled || !auth) {
       // Fallback local admin mode when Firebase isn't configured
       localStorage.setItem('adminAuth', 'local');
-      navigate('/admin/dashboard');
+      router.push('/admin/dashboard');
       return;
     }
     try{
       await signInWithEmailAndPassword(auth as any,email,password);
       // mark session so dashboard can accept this login
       localStorage.setItem('adminAuth', 'firebase');
-      navigate('/admin/dashboard');
+      router.push('/admin/dashboard');
     }catch(err){
       alert('Login failed');
     }

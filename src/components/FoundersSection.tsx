@@ -1,140 +1,153 @@
+'use client';
+
+import React from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 const founderStats = [
   {
-    label: 'Projects Completed',
-    value: '15+',
-    note: 'Industry-leading digital solutions',
+    label: 'Projects Done',
+    value: '2+',
+    note: 'Digital solutions',
   },
   {
-    label: 'Technologies Used',
-    value: '5+',
-    note: 'Modern stack across all domains',
+    label: 'Tech Stack',
+    value: '10+',
+    note: 'Modern technologies',
   },
   {
-    label: 'Creative Solutions',
-    value: '16+',
-    note: 'Award-winning brand experiences',
+    label: 'Solutions',
+    value: '1+',
+    note: 'Brand experiences',
   },
   {
     label: 'Years Together',
     value: '1+',
-    note: 'Proven partnership and excellence',
+    note: 'Excellence delivered',
   },
 ];
 
 const circleMotion = {
   animate: {
-    y: [0, -16, 0],
+    y: [0, -8, 0],
   },
   transition: {
-    duration: 7,
+    duration: 6,
     repeat: Infinity,
     ease: 'easeInOut',
   },
 };
 
 export default function FoundersSection() {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
-    <section id="founders" className="relative overflow-hidden px-6 pb-24 pt-10 sm:px-10 lg:px-16 lg:pb-32">
-      <div className="absolute inset-x-0 top-0 h-80 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.12),transparent_26%),radial-gradient(circle_at_top_right,rgba(168,85,247,0.12),transparent_22%)] opacity-90" />
+    <section id="founders" className="relative overflow-hidden px-4 sm:px-8 lg:px-12 pb-16 sm:pb-24 pt-10 lg:pb-32 bg-[#050816]">
+      {/* Radial Background Lighting Glows */}
+      <div className="absolute inset-x-0 top-0 h-80 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.12),transparent_30%),radial-gradient(circle_at_top_right,rgba(168,85,247,0.12),transparent_30%)] opacity-90 pointer-events-none" />
       <div className="pointer-events-none absolute left-0 top-28 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
       <div className="pointer-events-none absolute right-0 bottom-10 h-80 w-80 rounded-full bg-violet-400/10 blur-3xl" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_40%)]" />
-      <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.1fr_auto_1.1fr]">
-        <motion.div
-          className="relative flex justify-center lg:justify-end cursor-pointer"
-          {...circleMotion}
-          whileHover={{ scale: 1.08 }}
-          onClick={() => navigate('/founder/ritik')}
-        >
-          <div className="relative flex h-[330px] w-[330px] items-center justify-center rounded-full border border-white/10 bg-slate-950/60 shadow-[0_40px_120px_rgba(56,189,248,0.16)] backdrop-blur-2xl hover:shadow-[0_40px_120px_rgba(56,189,248,0.32)] transition-shadow">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/20 via-transparent to-violet-500/10 blur-xl" />
-            <div className="absolute inset-4 rounded-full border border-white/10 bg-slate-950/85 backdrop-blur-xl" />
-            <div className="absolute inset-6 rounded-full bg-[radial-gradient(circle_at_top_left,rgba(79,212,255,0.24),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.18),transparent_24%)]" />
-            <div className="absolute inset-0 rounded-full border border-white/5" />
-            <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-4 rounded-full px-6 text-center">
-              <div className="relative flex h-28 w-28 items-center justify-center rounded-full border border-white/10 bg-white/5 text-4xl font-semibold text-white/90 backdrop-blur-xl font-playfair">
-                R
+
+      <div className="relative mx-auto max-w-7xl">
+        
+        {/* 12-Column Responsive Grid with Generous Gap to Prevent Overlap */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
+          
+          {/* Left Column: Ritik Profile Circle (3 Cols on LG) */}
+          <div className="lg:col-span-3 flex justify-center order-2 lg:order-1">
+            <motion.div
+              className="relative cursor-pointer"
+              {...circleMotion}
+              whileHover={{ scale: 1.05 }}
+              onClick={() => router.push('/founder/ritik')}
+            >
+              <div className="relative flex aspect-square h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[270px] lg:w-[270px] items-center justify-center rounded-full border border-white/15 bg-slate-950/80 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/20 via-transparent to-violet-500/15 blur-xl pointer-events-none" />
+                <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
+                <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
+                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md">
+                    R
+                  </div>
+                  <div>
+                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Ritik Motwani</p>
+                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CCO</p>
+                    <p className="mt-1 text-[10px] text-slate-400">Click to view profile</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl font-semibold tracking-tight text-white font-playfair">Ritik</p>
-                <p className="mt-1 text-sm uppercase tracking-[0.28em] text-cyan-200/70">Co-Founder & CTO</p>
-                <p className="mt-2 text-xs text-slate-400">Click to learn more</p>
-              </div>
+            </motion.div>
+          </div>
+
+          {/* Center Column: Heading, Bio & 2-by-2 Stats Grid (6 Cols on LG) */}
+          <div className="lg:col-span-6 space-y-5 sm:space-y-8 text-center order-1 lg:order-2">
+            
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-[10px] sm:text-xs uppercase tracking-[0.25em] text-cyan-200/80 backdrop-blur-xl font-pro-bold">
+              FOUNDERS • INNOVATORS • CREATORS
             </div>
-          </div>
-          <div className="pointer-events-none absolute inset-0 rounded-full border border-cyan-400/10 blur-sm" />
-        </motion.div>
 
-        <div className="relative z-10 mx-auto w-full max-w-2xl space-y-8 text-center lg:mx-0 lg:text-left">
-          <div className="relative inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.4em] text-cyan-200/80 backdrop-blur-xl font-pro-bold">
-            FOUNDERS • INNOVATORS • CREATORS
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="space-y-3 sm:space-y-4 max-w-2xl mx-auto"
+            >
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white font-playfair leading-tight">
+                R&S SERVICES: Redefining Digital Excellence
+              </h2>
+              <p className="text-xs sm:text-base leading-relaxed text-slate-300 font-medium">
+                We are strategic thinkers and skilled developers passionate about creating transformative digital experiences.
+              </p>
+            </motion.div>
+
+            {/* 2-by-2 Stats Cards Grid */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 max-w-xl mx-auto">
+              {founderStats.map((stat) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4 }}
+                  className="rounded-xl sm:rounded-2xl border border-white/10 bg-slate-950/80 p-3.5 sm:p-5 backdrop-blur-2xl shadow-xl transition-all hover:border-cyan-400/30 text-center"
+                >
+                  <p className="text-lg sm:text-2xl font-bold text-white font-playfair">{stat.value}</p>
+                  <h3 className="mt-1 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-300 font-pro-bold">{stat.label}</h3>
+                  <p className="mt-1 text-[9px] sm:text-xs leading-tight text-slate-400">{stat.note}</p>
+                </motion.div>
+              ))}
+            </div>
+
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
-          >
-            <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl font-playfair">
-              R&S SERVICES: Redefining Digital Excellence
-            </h2>
-            <p className="max-w-xl text-base leading-8 text-slate-300 sm:text-lg font-pro-bold">
-              We are strategic thinkers and skilled developers passionate about creating transformative digital experiences. Our mission is to elevate brands through innovative solutions and exceptional execution.
-            </p>
-          </motion.div>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
-            {founderStats.map((stat) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.7 }}
-                className="rounded-3xl border border-white/10 bg-slate-950/70 p-6 backdrop-blur-2xl shadow-premium transition-smooth hover:-translate-y-1 hover:border-cyan-400/30"
-              >
-                <p className="text-xl font-semibold text-white font-playfair">{stat.value}</p>
-                <h3 className="mt-3 text-sm font-medium uppercase tracking-[0.25em] text-slate-300 font-pro-bold">{stat.label}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-400">{stat.note}</p>
-              </motion.div>
-            ))}
+          {/* Right Column: Sachin Profile Circle (3 Cols on LG) */}
+          <div className="lg:col-span-3 flex justify-center order-3 lg:order-3">
+            <motion.div
+              className="relative cursor-pointer"
+              {...circleMotion}
+              whileHover={{ scale: 1.05 }}
+              onClick={() => router.push('/founder/sachin')}
+            >
+              <div className="relative flex aspect-square h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[270px] lg:w-[270px] items-center justify-center rounded-full border border-white/15 bg-slate-950/80 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-400/15 blur-xl pointer-events-none" />
+                <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
+                <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
+                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md">
+                    S
+                  </div>
+                  <div>
+                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Sachin Rawat</p>
+                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CTO</p>
+                    <p className="mt-1 text-[10px] text-slate-400">Click to view profile</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
+
         </div>
 
-        <motion.div
-          className="relative flex justify-center lg:justify-start cursor-pointer"
-          {...circleMotion}
-          whileHover={{ scale: 1.08 }}
-          onClick={() => navigate('/founder/sachin')}
-        >
-          <div className="relative flex h-[330px] w-[330px] items-center justify-center rounded-full border border-white/10 bg-slate-950/60 shadow-[0_40px_120px_rgba(168,85,247,0.16)] backdrop-blur-2xl hover:shadow-[0_40px_120px_rgba(168,85,247,0.32)] transition-shadow">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-400/10 blur-xl" />
-            <div className="absolute inset-4 rounded-full border border-white/10 bg-slate-950/85 backdrop-blur-xl" />
-            <div className="absolute inset-6 rounded-full bg-[radial-gradient(circle_at_top_right,rgba(168,85,247,0.22),transparent_26%),radial-gradient(circle_at_bottom_left,rgba(56,189,248,0.18),transparent_24%)]" />
-            <div className="absolute inset-0 rounded-full border border-white/5" />
-            <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-4 rounded-full px-6 text-center">
-              <div className="relative flex h-28 w-28 items-center justify-center rounded-full border border-white/10 bg-white/5 text-4xl font-semibold text-white/90 backdrop-blur-xl font-playfair">
-                S
-              </div>
-              <div>
-                <p className="text-2xl font-semibold tracking-tight text-white font-playfair">Sachin</p>
-                <p className="mt-1 text-sm uppercase tracking-[0.28em] text-cyan-200/70">Co-Founder & CCO</p>
-                <p className="mt-2 text-xs text-slate-400">Click to learn more</p>
-              </div>
-            </div>
-          </div>
-          <div className="pointer-events-none absolute inset-0 rounded-full border border-violet-400/10 blur-sm" />
-        </motion.div>
       </div>
-
-      <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-slate-950/90 to-transparent" />
     </section>
   );
 }
