@@ -277,7 +277,7 @@ export default function FounderSachin() {
               <Users size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">1+</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">2+</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-200">Years Experience</p>
               <p className="text-[8px] sm:text-[10px] text-slate-400">Design & tech</p>
             </div>

@@ -48,7 +48,7 @@ const achievementCards = [
   },
   {
     title: 'Years of Expertise',
-    desc: '1+ years of hands-on experience in high-quality solutions.',
+    desc: '2+ years of hands-on experience in high-quality solutions.',
     icon: Target,
     gradient: 'from-emerald-500 to-teal-600',
     borderColor: 'border-emerald-500/30 hover:border-emerald-500/60',

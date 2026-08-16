@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 const founderStats = [
   {
     label: 'Projects Done',
-    value: '2+',
+    value: '15+',
     note: 'Digital solutions',
   },
   {
@@ -16,13 +16,13 @@ const founderStats = [
     note: 'Modern technologies',
   },
   {
-    label: 'Solutions',
-    value: '1+',
+    label: 'Satisfied Solutions',
+    value: '15+',
     note: 'Brand experiences',
   },
   {
     label: 'Years Together',
-    value: '1+',
+    value: '2+',
     note: 'Excellence delivered',
   },
 ];
