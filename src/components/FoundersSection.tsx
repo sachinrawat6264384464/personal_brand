@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import { ArrowUpRight } from 'lucide-react';
 
 const founderStats = [
   {
@@ -53,27 +54,39 @@ export default function FoundersSection() {
         {/* 12-Column Responsive Grid with Generous Gap to Prevent Overlap */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
-          {/* Left Column: Sachin Profile Circle (3 Cols on LG) - S FOR SR SERVICES */}
+          {/* Left Column: Sachin Full Profile Circle (3 Cols on LG) */}
           <div className="lg:col-span-3 flex justify-center order-2 lg:order-1">
             <motion.div
-              className="relative cursor-pointer"
+              className="relative cursor-pointer group"
               {...circleMotion}
               whileHover={{ scale: 1.05 }}
               onClick={() => router.push('/founder/sachin')}
             >
-              <div className="relative flex aspect-square h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[270px] lg:w-[270px] items-center justify-center rounded-full border border-white/15 bg-slate-950/80 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-400/15 blur-xl pointer-events-none" />
-                <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
-                <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
-                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md overflow-hidden p-0.5">
-                    <img src="/sachin.png" alt="Sachin Rawat" className="h-full w-full object-cover rounded-full" />
-                  </div>
-                  <div>
-                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Sachin Rawat</p>
-                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-purple-300">Co-Founder & CTO</p>
-                    <p className="mt-1 text-[10px] text-slate-400">Click to view profile</p>
+              {/* Outer Glowing Ring Border */}
+              <div className="relative flex aspect-square h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] lg:h-[280px] lg:w-[280px] items-center justify-center rounded-full border-2 border-purple-500/40 bg-slate-950 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden group-hover:border-purple-400 group-hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]">
+                
+                {/* Full Circle Image */}
+                <img
+                  src="/sachin.png"
+                  alt="Sachin Rawat"
+                  className="h-full w-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
+                />
+
+                {/* Dark Gradient Overlay at Bottom of Circle */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent pointer-events-none" />
+
+                {/* Info & View Profile Button Overlay */}
+                <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 flex flex-col items-center justify-end text-center z-10">
+                  <p className="text-base sm:text-xl font-bold tracking-tight text-white font-playfair drop-shadow-md">Sachin Rawat</p>
+                  <p className="text-[10px] sm:text-xs uppercase font-bold tracking-wider text-purple-300 drop-shadow mt-0.5">Co-Founder & CTO</p>
+                  
+                  {/* View Profile Button */}
+                  <div className="mt-2 inline-flex items-center gap-1 rounded-full border border-purple-400/50 bg-purple-950/80 px-3 py-1 text-[10px] sm:text-xs font-semibold text-purple-200 backdrop-blur-md group-hover:bg-purple-600 group-hover:text-white transition-all shadow-lg">
+                    <span>View Profile</span>
+                    <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </div>
                 </div>
+
               </div>
             </motion.div>
           </div>
@@ -120,27 +133,39 @@ export default function FoundersSection() {
 
           </div>
 
-          {/* Right Column: Ritik Profile Circle (3 Cols on LG) - R FOR SR SERVICES */}
+          {/* Right Column: Ritik Full Profile Circle (3 Cols on LG) */}
           <div className="lg:col-span-3 flex justify-center order-3 lg:order-3">
             <motion.div
-              className="relative cursor-pointer"
+              className="relative cursor-pointer group"
               {...circleMotion}
               whileHover={{ scale: 1.05 }}
               onClick={() => router.push('/founder/ritik')}
             >
-              <div className="relative flex aspect-square h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[270px] lg:w-[270px] items-center justify-center rounded-full border border-white/15 bg-slate-950/80 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/20 via-transparent to-violet-500/15 blur-xl pointer-events-none" />
-                <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
-                <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
-                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md overflow-hidden p-0.5">
-                    <img src="/ritk.png" alt="Ritik Motwani" className="h-full w-full object-cover rounded-full" />
-                  </div>
-                  <div>
-                    <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Ritik Motwani</p>
-                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CMO</p>
-                    <p className="mt-1 text-[10px] text-slate-400">Click to view profile</p>
+              {/* Outer Glowing Ring Border */}
+              <div className="relative flex aspect-square h-[220px] w-[220px] sm:h-[260px] sm:w-[260px] lg:h-[280px] lg:w-[280px] items-center justify-center rounded-full border-2 border-cyan-500/40 bg-slate-950 shadow-2xl backdrop-blur-2xl transition-all shrink-0 overflow-hidden group-hover:border-cyan-400 group-hover:shadow-[0_0_40px_rgba(56,189,248,0.4)]">
+                
+                {/* Full Circle Image */}
+                <img
+                  src="/ritk.png"
+                  alt="Ritik Motwani"
+                  className="h-full w-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
+                />
+
+                {/* Dark Gradient Overlay at Bottom of Circle */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent pointer-events-none" />
+
+                {/* Info & View Profile Button Overlay */}
+                <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 flex flex-col items-center justify-end text-center z-10">
+                  <p className="text-base sm:text-xl font-bold tracking-tight text-white font-playfair drop-shadow-md">Ritik Motwani</p>
+                  <p className="text-[10px] sm:text-xs uppercase font-bold tracking-wider text-cyan-300 drop-shadow mt-0.5">Co-Founder & CMO</p>
+                  
+                  {/* View Profile Button */}
+                  <div className="mt-2 inline-flex items-center gap-1 rounded-full border border-cyan-400/50 bg-cyan-950/80 px-3 py-1 text-[10px] sm:text-xs font-semibold text-cyan-200 backdrop-blur-md group-hover:bg-cyan-600 group-hover:text-white transition-all shadow-lg">
+                    <span>View Profile</span>
+                    <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </div>
                 </div>
+
               </div>
             </motion.div>
           </div>
