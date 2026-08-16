@@ -47,6 +47,14 @@ export default function ContactSection() {
     setErrorMsg('');
 
     try {
+      // 1. Send API request to /api/contact (Sends SMTP confirmation email to client & notification to founders)
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form)
+      });
+
+      // 2. If Firebase is active, save to Firestore 'contacts' collection
       if (firebaseEnabled && firebaseApp) {
         const db = getFirestore(firebaseApp);
         await addDoc(collection(db, 'contacts'), { 
@@ -55,6 +63,7 @@ export default function ContactSection() {
         });
       }
 
+      // 3. Open WhatsApp link to 8319694592
       const waText = encodeURIComponent(
         `*New Inquiry from R&S Services Website* 🚀\n\n` +
         `👤 *Name:* ${form.first} ${form.last}\n` +
@@ -64,19 +73,7 @@ export default function ContactSection() {
         `💰 *Budget:* ${form.budget || 'Not specified'}\n\n` +
         `📝 *Message:*\n${form.message}`
       );
-
       window.open(`https://wa.me/918319694592?text=${waText}`, '_blank');
-
-      const mailSubject = encodeURIComponent(`New Inquiry: ${form.type} from ${form.first} ${form.last}`);
-      const mailBody = encodeURIComponent(
-        `Name: ${form.first} ${form.last}\n` +
-        `Email: ${form.email}\n` +
-        `Phone: ${form.phone || 'Not provided'}\n` +
-        `Service: ${form.type}\n` +
-        `Budget: ${form.budget || 'Not specified'}\n\n` +
-        `Message:\n${form.message}`
-      );
-      window.location.href = `mailto:ritikmotwani18@gmail.com?subject=${mailSubject}&body=${mailBody}`;
 
       setSuccess(true);
       setForm({ first: '', last: '', email: '', phone: '', type: 'General Inquiry', budget: '', message: '' });
@@ -153,7 +150,7 @@ export default function ContactSection() {
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-3.5">
               
-              {/* Row 1: First name & Last name (2-by-2 on mobile) */}
+              {/* Row 1: First name & Last name */}
               <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
                 <div className="space-y-1">
                   <label className="text-[10px] font-semibold text-slate-300 uppercase tracking-wider">First Name <span className="text-cyan-400">*</span></label>
@@ -183,7 +180,7 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              {/* Row 2: Email & Phone (2-by-2 on mobile) */}
+              {/* Row 2: Email & Phone */}
               <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
                 <div className="space-y-1">
                   <label className="text-[10px] font-semibold text-slate-300 uppercase tracking-wider">Email <span className="text-cyan-400">*</span></label>
@@ -214,7 +211,7 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              {/* Row 3: Service Type & Budget (2-by-2 on mobile) */}
+              {/* Row 3: Service Type & Budget */}
               <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
                 <div className="space-y-1">
                   <label className="text-[10px] font-semibold text-slate-300 uppercase tracking-wider">Service</label>
@@ -290,7 +287,7 @@ export default function ContactSection() {
               {success && (
                 <div className="rounded-xl border border-emerald-500/30 bg-emerald-950/40 p-2.5 flex items-center gap-2 text-xs text-emerald-300 font-semibold">
                   <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
-                  <span>Message dispatched to WhatsApp & Email.</span>
+                  <span>Thank you! Confirmation email dispatched to your inbox & founders notified.</span>
                 </div>
               )}
 
