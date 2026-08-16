@@ -76,7 +76,7 @@ export async function POST(req: Request) {
           <div class="content">
             <div class="greeting">Hi ${clientFullName},</div>
             <div class="paragraph">
-              Thank you for reaching out to <strong>SR Services</strong>! Your inquiry has been successfully received by our system. Our co-founders <strong>Ritik Motwani (CCO)</strong> and <strong>Sachin Rawat (CTO)</strong> will review your project details and connect with you within 24 hours.
+              Thank you for reaching out to <strong>SR Services</strong>! Your inquiry has been successfully received by our system. Our co-founders <strong>Ritik Motwani (CMO)</strong> and <strong>Sachin Rawat (CTO)</strong> will review your project details and connect with you within 24 hours.
             </div>
             
             <div class="summary-box">
@@ -118,7 +118,7 @@ export async function POST(req: Request) {
 
           <div class="footer">
             <div>Best Regards,</div>
-            <div class="founders-sig">Ritik Motwani (CCO) & Sachin Rawat (CTO)</div>
+            <div class="founders-sig">Ritik Motwani (CMO) & Sachin Rawat (CTO)</div>
             <div style="margin-top: 6px;">SR SERVICES • Indore, Madhya Pradesh, India</div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import FounderRitik from '../../../views/FounderRitik';
 
 export const metadata = {
-  title: 'Ritik - Co-Founder & CTO | R&S SERVICES',
-  description: 'Technical Leadership and Full-Stack Architecture expertise by Ritik.',
+  title: 'Ritik Motwani - Co-Founder & CMO | SR SERVICES',
+  description: 'Marketing Strategy, Product Growth, and Digital Systems by Ritik Motwani.',
 };
 
 export default function FounderRitikPage() {

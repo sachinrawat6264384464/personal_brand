@@ -161,8 +161,8 @@ export default function Footer() {
                     R
                   </div>
                   <div>
-                    <h5 className="text-xs font-bold text-white font-playfair group-hover:text-cyan-300 transition-colors">Ritik (CCO)</h5>
-                    <p className="text-[10px] text-slate-400">Chief Creative Officer</p>
+                    <h5 className="text-xs font-bold text-white font-playfair group-hover:text-cyan-300 transition-colors">Ritik (CMO)</h5>
+                    <p className="text-[10px] text-slate-400">Chief Marketing Officer</p>
                   </div>
                 </div>
                 <ArrowUpRight size={16} className="text-cyan-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

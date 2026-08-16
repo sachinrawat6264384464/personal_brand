@@ -137,7 +137,7 @@ export default function FoundersSection() {
                   </div>
                   <div>
                     <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Ritik Motwani</p>
-                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CCO</p>
+                    <p className="mt-0.5 text-[10px] sm:text-xs uppercase tracking-wider text-cyan-200/80">Co-Founder & CMO</p>
                     <p className="mt-1 text-[10px] text-slate-400">Click to view profile</p>
                   </div>
                 </div>

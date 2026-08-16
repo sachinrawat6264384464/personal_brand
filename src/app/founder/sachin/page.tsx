@@ -1,8 +1,8 @@
 import FounderSachin from '../../../views/FounderSachin';
 
 export const metadata = {
-  title: 'Sachin - Co-Founder & CCO | R&S SERVICES',
-  description: 'Creative Direction, UI/UX Design, and Brand Strategy by Sachin.',
+  title: 'Sachin - Co-Founder & CTO | SR SERVICES',
+  description: 'Technical Architecture, Full-Stack & AI Systems by Sachin Rawat.',
 };
 
 export default function FounderSachinPage() {

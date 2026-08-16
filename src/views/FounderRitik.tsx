@@ -45,10 +45,10 @@ export default function FounderRitik() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left"
           >
-            {/* CCO Tag Badge */}
+            {/* CMO Tag Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/40 bg-cyan-950/40 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-cyan-300 backdrop-blur-md shadow-md">
               <Sparkles size={14} className="text-cyan-400" />
-              <span>Co-Founder & Chief Creative Officer (CCO)</span>
+              <span>Co-Founder & Chief Marketing Officer (CMO)</span>
             </div>
 
             {/* Headline Name */}
@@ -123,7 +123,7 @@ export default function FounderRitik() {
 
                 <div>
                   <h3 className="text-base sm:text-2xl font-bold text-white font-playfair">Ritik Motwani</h3>
-                  <p className="text-[9px] sm:text-xs font-bold tracking-wider text-purple-300 uppercase mt-0.5">Co-Founder & CCO</p>
+                  <p className="text-[9px] sm:text-xs font-bold tracking-wider text-purple-300 uppercase mt-0.5">Co-Founder & CMO</p>
                 </div>
 
                 {/* Social Icons inside Profile Circle */}
