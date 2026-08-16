@@ -117,8 +117,8 @@ export default function FounderSachin() {
               <div className="relative z-10 flex h-[210px] w-[210px] sm:h-[290px] sm:w-[290px] flex-col items-center justify-center gap-2 sm:gap-3 rounded-full border border-white/10 bg-slate-950/90 p-4 sm:p-6 text-center backdrop-blur-2xl shadow-2xl shrink-0">
 
                 {/* Glowing Avatar */}
-                <div className="flex h-16 w-16 sm:h-24 sm:w-24 items-center justify-center rounded-full border border-purple-500/40 bg-gradient-to-br from-purple-900/60 to-slate-950 text-2xl sm:text-4xl font-extrabold text-white shadow-lg font-playfair shrink-0">
-                  S
+                <div className="flex h-16 w-16 sm:h-24 sm:w-24 items-center justify-center rounded-full border border-purple-500/40 bg-gradient-to-br from-purple-900/60 to-slate-950 text-2xl sm:text-4xl font-extrabold text-white shadow-lg font-playfair shrink-0 overflow-hidden p-0.5">
+                  <img src="/sachin.png" alt="Sachin Rawat" className="h-full w-full object-cover rounded-full" />
                 </div>
 
                 <div>

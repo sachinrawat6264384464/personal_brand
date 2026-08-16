@@ -140,8 +140,8 @@ export default function Footer() {
                 className="group flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-3 hover:border-purple-400/50 hover:bg-slate-900 transition-all cursor-pointer shadow-md"
               >
                 <div className="flex items-center gap-3">
-                  <div className="h-9 w-9 rounded-full bg-purple-950 border border-purple-500/30 flex items-center justify-center font-bold text-purple-400 text-xs font-playfair shrink-0">
-                    S
+                  <div className="h-9 w-9 rounded-full bg-purple-950 border border-purple-500/30 flex items-center justify-center shrink-0 overflow-hidden p-0.5">
+                    <img src="/sachin.png" alt="Sachin Rawat" className="h-full w-full object-cover rounded-full" />
                   </div>
                   <div>
                     <h5 className="text-xs font-bold text-white font-playfair group-hover:text-purple-300 transition-colors">Sachin (CTO)</h5>
@@ -157,8 +157,8 @@ export default function Footer() {
                 className="group flex items-center justify-between rounded-2xl border border-white/10 bg-slate-900/60 p-3 hover:border-cyan-400/50 hover:bg-slate-900 transition-all cursor-pointer shadow-md"
               >
                 <div className="flex items-center gap-3">
-                  <div className="h-9 w-9 rounded-full bg-cyan-950 border border-cyan-500/30 flex items-center justify-center font-bold text-cyan-400 text-xs font-playfair shrink-0">
-                    R
+                  <div className="h-9 w-9 rounded-full bg-cyan-950 border border-cyan-500/30 flex items-center justify-center shrink-0 overflow-hidden p-0.5">
+                    <img src="/ritk.png" alt="Ritik Motwani" className="h-full w-full object-cover rounded-full" />
                   </div>
                   <div>
                     <h5 className="text-xs font-bold text-white font-playfair group-hover:text-cyan-300 transition-colors">Ritik (CMO)</h5>

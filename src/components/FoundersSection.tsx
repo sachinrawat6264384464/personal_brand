@@ -65,8 +65,8 @@ export default function FoundersSection() {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-400/15 blur-xl pointer-events-none" />
                 <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
                 <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
-                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md">
-                    S
+                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md overflow-hidden p-0.5">
+                    <img src="/sachin.png" alt="Sachin Rawat" className="h-full w-full object-cover rounded-full" />
                   </div>
                   <div>
                     <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Sachin Rawat</p>
@@ -132,8 +132,8 @@ export default function FoundersSection() {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/20 via-transparent to-violet-500/15 blur-xl pointer-events-none" />
                 <div className="absolute inset-3 sm:inset-4 rounded-full border border-white/10 bg-slate-950/90 backdrop-blur-xl pointer-events-none" />
                 <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-1.5 sm:gap-3 rounded-full px-3 text-center">
-                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md">
-                    R
+                  <div className="relative flex aspect-square h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full border border-white/15 bg-white/5 text-2xl sm:text-3xl font-semibold text-white backdrop-blur-xl font-playfair shrink-0 shadow-md overflow-hidden p-0.5">
+                    <img src="/ritk.png" alt="Ritik Motwani" className="h-full w-full object-cover rounded-full" />
                   </div>
                   <div>
                     <p className="text-base sm:text-xl font-semibold tracking-tight text-white font-playfair">Ritik Motwani</p>
