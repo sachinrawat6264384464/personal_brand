@@ -82,7 +82,7 @@ export default function FounderSachin() {
             </div>
 
             <p className="text-xs sm:text-sm text-purple-200/90 leading-relaxed font-mono bg-purple-950/40 border border-purple-500/20 p-3 rounded-xl">
-              Co-Founder & CTO @ R&S Services | Full-Stack Architect | AI & SaaS Specialist | Scalable Systems Engineer
+              Co-Founder & CTO @ SR Services | Full-Stack Architect | AI & SaaS Specialist | Scalable Systems Engineer
             </p>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -147,7 +147,7 @@ export default function FounderSachin() {
                     <Linkedin size={13} />
                   </a>
                   <a
-                    href="mailto:sachinrawat6264384464@gmail.com"
+                    href="mailto:srservices0826@gmail.com"
                     className="h-7 w-7 sm:h-8 sm:w-8 rounded-full border border-white/10 bg-slate-900 flex items-center justify-center text-slate-300 hover:text-white hover:border-cyan-400 transition-all"
                     aria-label="Email"
                   >

@@ -12,10 +12,10 @@ const testimonials = [
     company: 'FinPay',
     companyLogo: 'FINPAY',
     logoType: 'fintech',
-    text: 'RS Services transformed our idea into a powerful digital platform with great attention to detail.',
+    text: 'SR Services transformed our idea into a powerful digital platform with great attention to detail.',
     rating: '5.0',
     avatarGradient: 'from-blue-600 to-cyan-500',
-    initials: 'RS'
+    initials: 'SR'
   },
   {
     id: 'priya-mehta',

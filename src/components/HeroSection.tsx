@@ -111,10 +111,10 @@ export default function HeroSection() {
               <div className="flex items-center justify-between pb-3 sm:pb-5 border-b border-white/10">
                 <div className="flex items-center gap-2.5 sm:gap-3">
                   <div className="h-8 w-8 sm:h-10 sm:w-10 rounded-xl sm:rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center font-extrabold text-xs sm:text-sm text-white shadow-md">
-                    RS
+                    SR
                   </div>
                   <div>
-                    <h3 className="text-xs sm:text-sm font-bold text-white font-playfair tracking-wide">R&S DIGITAL ENGINE</h3>
+                    <h3 className="text-xs sm:text-sm font-bold text-white font-playfair tracking-wide">SR DIGITAL ENGINE</h3>
                     <p className="text-[9px] sm:text-[10px] text-purple-400 font-semibold tracking-wider uppercase">Next-Gen Architecture</p>
                   </div>
                 </div>

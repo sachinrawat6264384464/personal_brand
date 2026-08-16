@@ -147,7 +147,7 @@ export default function FounderRitik() {
                     <Linkedin size={13} />
                   </a>
                   <a
-                    href="mailto:ritikmotwani18@gmail.com"
+                    href="mailto:srservices0826@gmail.com"
                     className="h-7 w-7 sm:h-8 sm:w-8 rounded-full border border-white/10 bg-slate-900 flex items-center justify-center text-slate-300 hover:text-white hover:border-cyan-400 transition-all"
                     aria-label="Email"
                   >

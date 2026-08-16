@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import SwastikCursorFollower from '../components/SwastikCursorFollower';
 
 export const metadata: Metadata = {
-  title: 'R&S SERVICES | Premium Digital Solutions & Branding',
+  title: 'SR SERVICES | Premium Digital Solutions & Branding',
   description: 'We craft high-performance digital products and premium brand strategies that elevate ambitious founders and enterprises.',
   keywords: ['Digital Services', 'Web Development', 'UI/UX Design', 'Personal Branding', 'SaaS Architecture'],
   authors: [{ name: 'Ritik & Sachin' }],

@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();
@@ -16,17 +18,17 @@ export async function POST(req: Request) {
     const clientFullName = `${first} ${last || ''}`.trim();
     const smtpHost = process.env.SMTP_HOST || 'smtp.gmail.com';
     const smtpPort = parseInt(process.env.SMTP_PORT || '465');
-    const smtpUser = process.env.SMTP_USER || 'ritikmotwani18@gmail.com';
+    const smtpUser = process.env.SMTP_USER || 'srservices0826@gmail.com';
     const smtpPass = process.env.SMTP_PASS || '';
-    const smtpFrom = process.env.SMTP_FROM || `"R&S SERVICES" <${smtpUser}>`;
-    const founderEmails = process.env.FOUNDER_EMAIL || 'ritikmotwani18@gmail.com,sachinrawat6264384464@gmail.com';
+    const smtpFrom = process.env.SMTP_FROM || `"SR SERVICES" <${smtpUser}>`;
+    const founderEmails = process.env.FOUNDER_EMAIL || 'srservices0826@gmail.com';
 
     // If SMTP Password is configured, send emails via Nodemailer
     if (smtpPass) {
       const transporter = nodemailer.createTransport({
         host: smtpHost,
         port: smtpPort,
-        secure: smtpPort === 465, // true for 465, false for other ports
+        secure: smtpPort === 465,
         auth: {
           user: smtpUser,
           pass: smtpPass,
@@ -40,7 +42,7 @@ export async function POST(req: Request) {
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thank You for Contacting R&S Services</title>
+        <title>Thank You for Contacting SR Services</title>
         <style>
           body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #050816; color: #ffffff; margin: 0; padding: 20px; }
           .container { max-width: 600px; margin: 0 auto; background: #0b0f29; border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
@@ -68,13 +70,13 @@ export async function POST(req: Request) {
       <body>
         <div class="container">
           <div class="header">
-            <div class="brand-badge">⚡ R&S DIGITAL ENGINE</div>
-            <div class="h1">R&S SERVICES</div>
+            <div class="brand-badge">⚡ SR DIGITAL ENGINE</div>
+            <div class="h1">SR SERVICES</div>
           </div>
           <div class="content">
             <div class="greeting">Hi ${clientFullName},</div>
             <div class="paragraph">
-              Thank you for reaching out to <strong>R&S Services</strong>! Your inquiry has been successfully received by our system. Our co-founders <strong>Ritik Motwani (CCO)</strong> and <strong>Sachin Rawat (CTO)</strong> will review your project details and connect with you within 24 hours.
+              Thank you for reaching out to <strong>SR Services</strong>! Your inquiry has been successfully received by our system. Our co-founders <strong>Ritik Motwani (CCO)</strong> and <strong>Sachin Rawat (CTO)</strong> will review your project details and connect with you within 24 hours.
             </div>
             
             <div class="summary-box">
@@ -110,14 +112,14 @@ export async function POST(req: Request) {
 
             <div class="contacts-bar">
               <div class="contact-item">📞 <strong>Call:</strong> <a href="tel:+918319694592">+91 83196 94592</a></div>
-              <div class="contact-item">✉️ <strong>Email:</strong> <a href="mailto:ritikmotwani18@gmail.com">ritikmotwani18@gmail.com</a></div>
+              <div class="contact-item">✉️ <strong>Email:</strong> <a href="mailto:srservices0826@gmail.com">srservices0826@gmail.com</a></div>
             </div>
           </div>
 
           <div class="footer">
             <div>Best Regards,</div>
             <div class="founders-sig">Ritik Motwani (CCO) & Sachin Rawat (CTO)</div>
-            <div style="margin-top: 6px;">R&S SERVICES • Indore, Madhya Pradesh, India</div>
+            <div style="margin-top: 6px;">SR SERVICES • Indore, Madhya Pradesh, India</div>
           </div>
         </div>
       </body>
@@ -150,7 +152,7 @@ export async function POST(req: Request) {
           <div class="row"><span class="label">Budget:</span> <span class="val">${budget || 'Not specified'}</span></div>
           <div class="row" style="margin-top:15px;"><span class="label">Message:</span></div>
           <div style="background:#020617; padding:12px; border-radius:8px; font-style:italic; color:#e2e8f0;">${message}</div>
-          <a href="https://wa.me/91${phone ? phone.replace(/[^0-9]/g, '') : '8319694592'}?text=${encodeURIComponent(`Hi ${first}, thank you for reaching out to R&S Services!`)}" class="btn-reply">💬 Reply via WhatsApp</a>
+          <a href="https://wa.me/91${phone ? phone.replace(/[^0-9]/g, '') : '8319694592'}?text=${encodeURIComponent(`Hi ${first}, thank you for reaching out to SR Services!`)}" class="btn-reply">💬 Reply via WhatsApp</a>
         </div>
       </body>
       </html>
@@ -160,7 +162,7 @@ export async function POST(req: Request) {
       await transporter.sendMail({
         from: smtpFrom,
         to: email,
-        subject: `✨ Thank You for Reaching Out to R&S Services!`,
+        subject: `✨ Thank You for Reaching Out to SR Services!`,
         html: clientHtmlTemplate,
       });
 

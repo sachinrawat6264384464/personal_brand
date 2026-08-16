@@ -45,10 +45,10 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center gap-3">
               <div className="h-11 w-11 rounded-full bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center font-extrabold text-white text-sm shadow-md shadow-cyan-500/20">
-                RS
+                SR
               </div>
               <div>
-                <h3 className="text-base font-bold font-playfair tracking-wide text-white">R&S SERVICES</h3>
+                <h3 className="text-base font-bold font-playfair tracking-wide text-white">SR SERVICES</h3>
                 <p className="text-xs text-purple-400 font-medium">Premium Digital Solutions</p>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                   <Linkedin size={18} />
                 </a>
                 <a
-                  href="mailto:ritikmotwani18@gmail.com"
+                  href="mailto:srservices0826@gmail.com"
                   className="h-10 w-10 rounded-xl border border-white/10 bg-slate-900/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-cyan-400 transition-all"
                   aria-label="Email Us"
                 >
@@ -237,7 +237,7 @@ export default function Footer() {
 
         {/* Bottom Copyright & Policy Links */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 border-t border-white/5">
-          <p>© 2026 <span className="text-purple-400 font-bold">R&S SERVICES</span>. All rights reserved.</p>
+          <p>© 2026 <span className="text-purple-400 font-bold">SR SERVICES</span>. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href="/#" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
             <span className="text-slate-700">|</span>

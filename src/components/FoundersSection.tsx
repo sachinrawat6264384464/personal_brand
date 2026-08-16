@@ -93,7 +93,7 @@ export default function FoundersSection() {
               className="space-y-3 sm:space-y-4 max-w-2xl mx-auto"
             >
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white font-playfair leading-tight">
-                R&S SERVICES: Redefining Digital Excellence
+                SR SERVICES: Redefining Digital Excellence
               </h2>
               <p className="text-xs sm:text-base leading-relaxed text-slate-300 font-medium">
                 We are strategic thinkers and skilled developers passionate about creating transformative digital experiences.

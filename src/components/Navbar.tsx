@@ -25,11 +25,11 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-cyan-400 to-purple-600 p-[1.5px] shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform shrink-0">
               <div className="h-full w-full rounded-[10.5px] bg-slate-950 flex items-center justify-center text-xs font-bold text-white font-mono tracking-tighter">
-                RS
+                SR
               </div>
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="text-xs sm:text-sm font-semibold font-playfair tracking-wide text-white">RS SERVICES</span>
+              <span className="text-xs sm:text-sm font-semibold font-playfair tracking-wide text-white">SR SERVICES</span>
               <span className="text-[10px] sm:text-xs text-slate-300">Premium Digital Solutions</span>
             </div>
           </Link>
