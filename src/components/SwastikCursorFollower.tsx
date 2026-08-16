@@ -1,65 +1,34 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { motion, useSpring, useMotionValue } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function SwastikCursorFollower() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Motion values for raw cursor position
-  const cursorX = useMotionValue(-100);
-  const cursorY = useMotionValue(-100);
-
-  // Smooth spring physics for fluid movement
-  const springConfig = { damping: 25, stiffness: 250, mass: 0.5 };
-  const smoothX = useSpring(cursorX, springConfig);
-  const smoothY = useSpring(cursorY, springConfig);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      cursorX.set(e.clientX);
-      cursorY.set(e.clientY);
-      if (!isVisible) setIsVisible(true);
-    };
-
-    const handleMouseLeave = () => {
-      setIsVisible(false);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, [cursorX, cursorY, isVisible]);
-
-  if (!isVisible) return null;
-
   return (
     <motion.div
-      style={{
-        x: smoothX,
-        y: smoothY,
-        translateX: '-50%',
-        translateY: '-50%',
-      }}
-      className="fixed top-0 left-0 pointer-events-none z-[99999] hidden md:block"
+      drag
+      dragMomentum={false}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      initial={{ opacity: 0, scale: 0.8, y: 20 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed bottom-6 right-6 z-[99999] cursor-grab active:cursor-grabbing select-none"
+      title="Sacred Sathiya • Drag to move anywhere"
     >
       {/* Outer Glowing Circle Badge */}
-      <div className="relative flex items-center justify-center h-14 w-14 rounded-full border border-amber-400/40 bg-slate-950/80 backdrop-blur-md shadow-[0_0_25px_rgba(251,191,36,0.4)]">
+      <div className="relative flex items-center justify-center h-14 w-14 rounded-full border border-amber-400/50 bg-slate-950/90 backdrop-blur-xl shadow-[0_0_30px_rgba(251,191,36,0.5)] transition-shadow hover:shadow-[0_0_40px_rgba(251,191,36,0.8)]">
         
         {/* Rotating Outer Ring Line */}
-        <div className="absolute inset-0 rounded-full border border-dashed border-amber-400/30 animate-[spin_12s_linear_infinite]" />
+        <div className="absolute inset-0 rounded-full border border-dashed border-amber-400/40 animate-[spin_14s_linear_infinite] pointer-events-none" />
         
-        {/* Subtle Background Glow */}
-        <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-yellow-500/20 blur-sm pointer-events-none" />
+        {/* Subtle Background Radial Glow */}
+        <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-amber-500/30 via-orange-500/30 to-yellow-500/30 blur-md pointer-events-none" />
 
-        {/* Traditional Auspicious 4-Dot Swastik SVG Icon */}
+        {/* Traditional Auspicious 4-Dot Swastik / Sathiya SVG Icon */}
         <svg 
           viewBox="0 0 100 100" 
-          className="w-7 h-7 text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.9)]"
+          className="w-7 h-7 text-amber-400 drop-shadow-[0_0_12px_rgba(251,191,36,0.9)] pointer-events-none"
         >
           {/* Swastik Bending Arms */}
           <path 
