@@ -265,7 +265,7 @@ export default function FounderRitik() {
               <Briefcase size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">2+</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">15+</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-200">Projects Delivered</p>
               <p className="text-[8px] sm:text-[10px] text-slate-400">Across industries</p>
             </div>
@@ -289,9 +289,9 @@ export default function FounderRitik() {
               <Rocket size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">10+</p>
-              <p className="text-[10px] sm:text-xs font-bold text-slate-200">Tech Stack Tools</p>
-              <p className="text-[8px] sm:text-[10px] text-slate-400">Modern stack</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">5+</p>
+              <p className="text-[10px] sm:text-xs font-bold text-slate-200">Happy Clients</p>
+              <p className="text-[8px] sm:text-[10px] text-slate-400">Worldwide</p>
             </div>
           </div>
 
@@ -301,9 +301,9 @@ export default function FounderRitik() {
               <Award size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">1+</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">5+</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-200">Awards Won</p>
-              <p className="text-[8px] sm:text-[10px] text-slate-400">E-Summit Winner</p>
+              <p className="text-[8px] sm:text-[10px] text-slate-400">For excellence</p>
             </div>
           </div>
         </motion.div>

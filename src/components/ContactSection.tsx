@@ -366,41 +366,37 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold text-white">Working Hours</p>
-                    <p className="text-[9px] sm:text-xs text-slate-300 truncate">10 AM - 7 PM</p>
+                    <p className="text-[9px] sm:text-xs text-slate-300 font-bold text-emerald-400 truncate">24/7 Available</p>
                   </div>
                 </div>
               </div>
 
-              {/* Social Links */}
+              {/* Social Links (Founders LinkedIn) */}
               <div className="pt-1">
-                <p className="text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-wider">Connect with us</p>
-                <div className="flex items-center gap-2.5">
+                <p className="text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-wider">Connect with Founders</p>
+                <div className="grid grid-cols-2 gap-2">
                   <a
                     href="https://www.linkedin.com/in/sachin-rawatb"
                     target="_blank"
                     rel="noreferrer"
-                    className="h-8 w-8 rounded-lg border border-white/10 bg-slate-900 flex items-center justify-center text-slate-300 hover:text-white hover:border-cyan-400 transition-all"
-                    aria-label="LinkedIn"
+                    className="flex items-center gap-2 rounded-xl border border-white/10 bg-slate-900/80 p-2 text-xs font-semibold text-slate-200 hover:text-white hover:border-purple-400 transition-all group"
                   >
-                    <Linkedin size={15} />
+                    <div className="h-6 w-6 rounded-lg bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+                      <Linkedin size={13} />
+                    </div>
+                    <span className="text-[11px] truncate">Sachin (CTO)</span>
                   </a>
+
                   <a
-                    href="https://www.instagram.com/sachin_rawat_7522"
+                    href="https://www.linkedin.com/in/ritik-motwani-1385562ba/"
                     target="_blank"
                     rel="noreferrer"
-                    className="h-8 w-8 rounded-lg border border-white/10 bg-slate-900 flex items-center justify-center text-slate-300 hover:text-white hover:border-purple-400 transition-all"
-                    aria-label="Instagram"
+                    className="flex items-center gap-2 rounded-xl border border-white/10 bg-slate-900/80 p-2 text-xs font-semibold text-slate-200 hover:text-white hover:border-cyan-400 transition-all group"
                   >
-                    <Instagram size={15} />
-                  </a>
-                  <a
-                    href="https://github.com/sachinrawat6264384464/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="h-8 w-8 rounded-lg border border-white/10 bg-slate-900 flex items-center justify-center text-slate-300 hover:text-white hover:border-cyan-400 transition-all"
-                    aria-label="GitHub"
-                  >
-                    <Github size={15} />
+                    <div className="h-6 w-6 rounded-lg bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                      <Linkedin size={13} />
+                    </div>
+                    <span className="text-[11px] truncate">Ritik (CMO)</span>
                   </a>
                 </div>
               </div>

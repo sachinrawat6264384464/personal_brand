@@ -265,7 +265,7 @@ export default function FounderSachin() {
               <Briefcase size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">16+</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">15+</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-200">Projects Delivered</p>
               <p className="text-[8px] sm:text-[10px] text-slate-400">Across industries</p>
             </div>
@@ -277,7 +277,7 @@ export default function FounderSachin() {
               <Users size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">8+</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">1+</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-200">Years Experience</p>
               <p className="text-[8px] sm:text-[10px] text-slate-400">Design & tech</p>
             </div>
@@ -289,7 +289,7 @@ export default function FounderSachin() {
               <Rocket size={18} className="sm:w-5 sm:h-5" />
             </div>
             <div>
-              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">10+</p>
+              <p className="text-lg sm:text-3xl font-extrabold text-white font-playfair">5+</p>
               <p className="text-[10px] sm:text-xs font-bold text-slate-200">Happy Clients</p>
               <p className="text-[8px] sm:text-[10px] text-slate-400">Worldwide</p>
             </div>
