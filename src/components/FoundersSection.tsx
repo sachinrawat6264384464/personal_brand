@@ -7,8 +7,8 @@ import { ArrowUpRight } from 'lucide-react';
 
 const founderStats = [
   {
-    label: 'Projects Done',
-    value: '15+',
+    label: 'Projects Delivered',
+    value: 'Multiple',
     note: 'Digital solutions',
   },
   {
@@ -18,12 +18,12 @@ const founderStats = [
   },
   {
     label: 'Satisfied Solutions',
-    value: '15+',
+    value: 'Multiple',
     note: 'Brand experiences',
   },
   {
     label: 'Years Together',
-    value: '2+',
+    value: 'Multi-Year',
     note: 'Excellence delivered',
   },
 ];
